@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+span {
+  animation: animate 6s linear;
+  background: url("https://cdn2.iconfinder.com/data/icons/free-1/128/Love__heart_like-256.png");
+  background-size: cover;
+  height: 100px;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0);
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-filter: hue-rotate(0);
+}
+  100% {
+    opacity: 0;
+    filter: hue-rotate(720deg);
+    transform: translate(-50%, -5000%);
+    -webkit-transform: translate(-50%, -5000%);
+    -moz-transform: translate(-50%, -5000%);
+    -ms-transform: translate(-50%, -5000%);
+    -o-transform: translate(-50%, -5000%);
+    -webkit-filter: hue-rotate(720deg);
+  }
+}

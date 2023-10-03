@@ -1,0 +1,59 @@
+body {
+  align-items: center;
+  background-color: aliceblue;
+  display: flex;
+  font-family: sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+.btn {
+  background-color: orange;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: black;
+  overflow: hidden;
+  padding: 20px 40px;
+  position: relative;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before {
+  background-color: orangered;
+  border-radius: 50%;
+  content: "";
+  height: 0;
+  left: var(--xPos);
+  position: absolute;
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+  width: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: width 0.5s, height 0.5s;
+  -moz-transition: width 0.5s, height 0.5s;
+  -ms-transition: width 0.5s, height 0.5s;
+  -o-transition: width 0.5s, height 0.5s;
+}
+
+.btn:hover::before {
+  height: 300px;
+  width: 300px;
+}

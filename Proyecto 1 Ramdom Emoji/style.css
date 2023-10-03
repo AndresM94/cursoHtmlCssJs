@@ -1,0 +1,50 @@
+body {
+  align-items: center;
+  background: olivedrab;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.section {
+  text-align: center;
+}
+
+.btn {
+  background: rgb(255, 255, 255, .2);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  filter: grayscale();
+  font-size: 5rem;
+  padding: 15px;
+  transition: filter .2s ease-in-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-filter: grayscale();
+  -webkit-transition: filter .2s ease-in-out;
+  -moz-transition: filter .2s ease-in-out;
+  -ms-transition: filter .2s ease-in-out;
+  -o-transition: filter .2s ease-in-out;
+}
+
+.btn:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.emoji-name {
+  color: darkblue;
+  font-weight: 600;
+}

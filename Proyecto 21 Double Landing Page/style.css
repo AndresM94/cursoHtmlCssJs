@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  color: aliceblue;
+  backdrop-filter: brightness(0.5);
+  letter-spacing: 4px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: 4px solid;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 1s background-color;
+  -webkit-transition: 1s background-color;
+  -moz-transition: 1s background-color;
+  -ms-transition: 1s background-color;
+  -o-transition: 1s background-color;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+}
+
+.split.left {
+  position: absolute;
+  left: 0;
+  background-color: pink;
+  background-image: url("https://www.apple.com/newsroom/images/product/iphone/geo/Apple-iPhone-14-iPhone-14-Plus-2up-midnight-220907-geo_inline.jpg.large.jpg");
+  background-size: cover;
+  transition: width 2s ease-in-out;
+}
+
+.split.right {
+  position: absolute;
+  right: 0;
+  background-color: lightblue;
+  background-image: url("https://images.samsung.com/is/image/samsung/p6pim/co/2202/gallery/co-galaxy-s22-s901-sm-s901ezkkltc-thumb-530761584?imwidth=480");
+  background-size: cover;
+  transition: width 2s ease-in-out;
+}
+
+.active-left .left {
+  width: 75%;
+}
+
+.active-left .right {
+  width: 25%;
+}
+
+.active-right .left {
+  width: 25%;
+}
+
+.active-right .right {
+  width: 75%;
+}
